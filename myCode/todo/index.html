@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ConnectToBackbone</title>
+  </head>
+  <body>
+
+
+  <h1>My Tasks</h1>
+  <form id='addTask' action="">
+    <input type='text' placeholder='Your New Task'>
+    <input type='submit' value='Add Task'>
+  </form>
+  <div class="tasks">
+    <script id='taskTemplate' type='text/template'>
+      <span> <%= title %> </span>
+      <button class='edit'>Edit</button>
+      <button class='delete'>Delete</button>
+    </script>
+  </div>
+
+
+  <script src="./js/libs/jquery.js" ></script>
+  <script src="./js/libs/underscore.js" ></script>
+  <script src="./js/libs/backbone.js"></script>
+  <script src="./js/script.js"></script>
+  </body>
+</html>
